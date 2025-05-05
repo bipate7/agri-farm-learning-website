@@ -1,0 +1,197 @@
+
+/* Base styles */
+:root {
+  --farm-primary: #2a7422;
+  --farm-primary-dark: #1f5919;
+  --farm-primary-light: #e8f5e9;
+  --farm-accent: #4caf50;
+  --farm-accent-light: #a5d6a7;
+  --farm-background: #f8f9fa;
+  --farm-text: #212529;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--farm-text);
+  background-color: var(--farm-background);
+}
+
+/* Hero section */
+.hero-section {
+  background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Buttons */
+.btn-success {
+  background-color: var(--farm-primary);
+  border-color: var(--farm-primary);
+}
+
+.btn-success:hover, 
+.btn-success:focus {
+  background-color: var(--farm-primary-dark);
+  border-color: var(--farm-primary-dark);
+}
+
+.btn-outline-success {
+  color: var(--farm-primary);
+  border-color: var(--farm-primary);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--farm-primary);
+  border-color: var(--farm-primary);
+}
+
+/* Course cards */
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Dashboard sidebar */
+.sidebar {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+}
+
+@media (max-width: 767.98px) {
+  .sidebar {
+    height: auto;
+    position: relative;
+  }
+}
+
+.nav-link.active {
+  color: var(--farm-primary) !important;
+  background-color: var(--farm-primary-light);
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  color: var(--farm-primary) !important;
+}
+
+/* Text colors */
+.text-success {
+  color: var(--farm-primary) !important;
+}
+
+.bg-success {
+  background-color: var(--farm-primary) !important;
+}
+
+/* Badge styles */
+.badge.bg-light.text-success {
+  background-color: var(--farm-primary-light) !important;
+  color: var(--farm-primary) !important;
+}
+
+/* Progress bar */
+.progress {
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  background-color: var(--farm-primary);
+}
+
+/* Tables */
+.table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.table-hover tbody tr:hover {
+  background-color: var(--farm-primary-light);
+}
+
+/* Transitions */
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .hero-section {
+    min-height: 400px;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    min-height: 350px;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+}

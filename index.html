@@ -1,26 +1,399 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>agri-wisdom-hub-link</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriWisdom - Empower Your Farming Journey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="bi bi-tree text-success me-2 fs-4"></i>
+        <span class="fw-bold text-success">AgriWisdom</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experts.html">Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="btn btn-outline-success" href="login.html">Login</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="btn btn-success" href="register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <meta property="og:title" content="agri-wisdom-hub-link" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <!-- Hero Section -->
+  <section class="hero-section text-white position-relative py-5">
+    <div class="container py-5 hero-content">
+      <div class="row align-items-center py-5">
+        <div class="col-lg-6">
+          <h1 class="display-4 fw-bold mb-3">Grow Your Farming Knowledge</h1>
+          <p class="lead mb-4">Join our community of farmers and agricultural experts. Learn modern techniques, get advice from specialists, and improve your farm productivity.</p>
+          <div class="d-flex gap-3">
+            <a href="register.html" class="btn btn-success btn-lg">Get Started</a>
+            <a href="courses.html" class="btn btn-outline-light btn-lg">Explore Courses</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+  <!-- Features Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-3">
+      <h2 class="text-center text-success mb-5">Why Choose AgriWisdom?</h2>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="mb-3">
+                <i class="bi bi-book text-success fs-1"></i>
+              </div>
+              <h3 class="card-title h5">Expert-Led Courses</h3>
+              <p class="card-text text-muted">Learn from agricultural professionals with years of field experience.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="mb-3">
+                <i class="bi bi-people text-success fs-1"></i>
+              </div>
+              <h3 class="card-title h5">Farming Community</h3>
+              <p class="card-text text-muted">Connect with other farmers to share experiences and best practices.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="mb-3">
+                <i class="bi bi-chat-dots text-success fs-1"></i>
+              </div>
+              <h3 class="card-title h5">Expert Consultations</h3>
+              <p class="card-text text-muted">Book one-on-one sessions with specialists to solve specific challenges.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- Featured Courses -->
+  <section class="py-5">
+    <div class="container py-3">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-success m-0">Featured Courses</h2>
+        <a href="courses.html" class="text-decoration-none text-success">View All <i class="bi bi-arrow-right"></i></a>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef" class="card-img-top" alt="Sustainable Farming">
+            <div class="card-body">
+              <span class="badge bg-light text-success mb-2">Organic Farming</span>
+              <h3 class="card-title h5">Sustainable Farming Practices</h3>
+              <p class="card-text text-muted">Learn eco-friendly techniques to improve soil health and crop yields.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted"><i class="bi bi-person"></i> Dr. Emma Thompson</span>
+                <div class="text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <small class="text-muted ms-1">4.8</small>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="courses.html" class="btn btn-success w-100">View Course</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399" class="card-img-top" alt="Crop Rotation">
+            <div class="card-body">
+              <span class="badge bg-light text-success mb-2">Crop Management</span>
+              <h3 class="card-title h5">Advanced Crop Rotation</h3>
+              <p class="card-text text-muted">Master the science of crop rotation to maximize land productivity.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted"><i class="bi bi-person"></i> Prof. James Wilson</span>
+                <div class="text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <small class="text-muted ms-1">4.6</small>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="courses.html" class="btn btn-success w-100">View Course</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30" class="card-img-top" alt="Livestock Health">
+            <div class="card-body">
+              <span class="badge bg-light text-success mb-2">Livestock</span>
+              <h3 class="card-title h5">Livestock Health Management</h3>
+              <p class="card-text text-muted">Learn preventive healthcare practices for farm animals.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-muted"><i class="bi bi-person"></i> Dr. Sarah Johnson</span>
+                <div class="text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <small class="text-muted ms-1">4.9</small>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer bg-white border-0">
+              <a href="courses.html" class="btn btn-success w-100">View Course</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expert Section -->
+  <section class="py-5 bg-light">
+    <div class="container py-3">
+      <h2 class="text-center text-success mb-5">Meet Our Expert Instructors</h2>
+      
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <div class="p-3">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956" class="rounded-circle mb-3" alt="Dr. Emma Thompson" style="width: 150px; height: 150px; object-fit: cover;">
+              <h3 class="h5">Dr. Emma Thompson</h3>
+              <p class="text-success mb-1">Agricultural Scientist</p>
+              <p class="text-muted small mb-3">Organic Farming</p>
+              <p class="small text-muted px-3">Dr. Thompson has over 15 years of experience in developing sustainable farming practices.</p>
+              <a href="experts.html" class="btn btn-outline-success">View Profile</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <div class="p-3">
+              <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857" class="rounded-circle mb-3" alt="Prof. James Wilson" style="width: 150px; height: 150px; object-fit: cover;">
+              <h3 class="h5">Prof. James Wilson</h3>
+              <p class="text-success mb-1">Soil Scientist</p>
+              <p class="text-muted small mb-3">Crop Management</p>
+              <p class="small text-muted px-3">Professor Wilson specializes in soil health and crop rotation strategies with over 20 years of experience.</p>
+              <a href="experts.html" class="btn btn-outline-success">View Profile</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm text-center">
+            <div class="p-3">
+              <img src="https://images.unsplash.com/photo-1518577915332-c2a19f149a75" class="rounded-circle mb-3" alt="Dr. Sarah Johnson" style="width: 150px; height: 150px; object-fit: cover;">
+              <h3 class="h5">Dr. Sarah Johnson</h3>
+              <p class="text-success mb-1">Veterinarian</p>
+              <p class="text-muted small mb-3">Livestock Health</p>
+              <p class="small text-muted px-3">Dr. Johnson is a renowned veterinarian specializing in livestock health and welfare.</p>
+              <a href="experts.html" class="btn btn-outline-success">View Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5">
+    <div class="container py-3">
+      <h2 class="text-center text-success mb-5">What Our Members Say</h2>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="mb-3 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="card-text mb-4">"The sustainable farming course completely transformed how I manage my farm. My yields have increased by 30% while using fewer chemicals."</p>
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="John D." class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
+                </div>
+                <div class="ms-3">
+                  <h6 class="m-0">John D.</h6>
+                  <small class="text-muted">Crop Farmer, Iowa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="mb-3 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="card-text mb-4">"The expert consultation saved my livestock from a disease outbreak. The immediate advice I received was invaluable."</p>
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="Maria G." class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
+                </div>
+                <div class="ms-3">
+                  <h6 class="m-0">Maria G.</h6>
+                  <small class="text-muted">Cattle Rancher, Texas</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="mb-3 text-warning">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+              </div>
+              <p class="card-text mb-4">"The community support is amazing. I've learned so much from other farmers facing similar challenges in different regions."</p>
+              <div class="d-flex align-items-center">
+                <div class="flex-shrink-0">
+                  <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d" alt="Robert T." class="rounded-circle" style="width: 50px; height: 50px; object-fit: cover;">
+                </div>
+                <div class="ms-3">
+                  <h6 class="m-0">Robert T.</h6>
+                  <small class="text-muted">Organic Farmer, California</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 bg-success text-white">
+    <div class="container py-3 text-center">
+      <h2 class="mb-4">Ready to Start Your Farming Journey?</h2>
+      <p class="lead mb-4">Join thousands of farmers who have transformed their practices with AgriWisdom.</p>
+      <a href="register.html" class="btn btn-light btn-lg">Join Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="mb-4">
+            <a class="d-flex align-items-center text-white text-decoration-none mb-3" href="index.html">
+              <i class="bi bi-tree me-2 fs-4"></i>
+              <span class="fw-bold">AgriWisdom</span>
+            </a>
+            <p class="text-muted">Empowering farmers with knowledge, community, and expert guidance to cultivate success.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="courses.html" class="text-muted text-decoration-none">Courses</a></li>
+            <li class="mb-2"><a href="experts.html" class="text-muted text-decoration-none">Experts</a></li>
+            <li class="mb-2"><a href="resources.html" class="text-muted text-decoration-none">Resources</a></li>
+            <li class="mb-2"><a href="login.html" class="text-muted text-decoration-none">Login</a></li>
+            <li class="mb-2"><a href="register.html" class="text-muted text-decoration-none">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2 d-flex">
+              <i class="bi bi-envelope me-2 mt-1"></i>
+              <span class="text-muted">info@agriwisdom.com</span>
+            </li>
+            <li class="mb-2 d-flex">
+              <i class="bi bi-telephone me-2 mt-1"></i>
+              <span class="text-muted">+1 (555) 123-4567</span>
+            </li>
+            <li class="mb-2 d-flex">
+              <i class="bi bi-geo-alt me-2 mt-1"></i>
+              <span class="text-muted">123 Farm Lane, Harvest City, HC 56789</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Newsletter</h5>
+          <p class="text-muted mb-4">Subscribe to receive farming tips and updates.</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your email">
+              <button class="btn btn-success" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary pt-4 mt-4 text-center text-muted">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> AgriWisdom. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>

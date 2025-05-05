@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Courses - AgriWisdom</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="bi bi-tree text-success me-2 fs-4"></i>
+        <span class="fw-bold text-success">AgriWisdom</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experts.html">Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="btn btn-outline-success" href="login.html">Login</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="btn btn-success" href="register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="bg-success py-4 py-md-5">
+    <div class="container text-center text-white">
+      <h1 class="display-5 fw-bold mb-3">Agricultural Courses & Learning Resources</h1>
+      <p class="lead mb-0 mx-auto" style="max-width: 700px;">
+        Expand your knowledge with our expert-led courses on farming techniques, livestock management, and more.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Search and Filters -->
+  <section class="bg-white border-bottom py-4">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-lg-6">
+          <div class="input-group">
+            <span class="input-group-text bg-white border-end-0">
+              <i class="bi bi-search"></i>
+            </span>
+            <input type="search" id="courseSearch" class="form-control border-start-0" placeholder="Search courses by title, instructor, or category...">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <select class="form-select" id="categoryFilter">
+                <option value="all" selected>All Categories</option>
+                <option value="Organic Farming">Organic Farming</option>
+                <option value="Crop Management">Crop Management</option>
+                <option value="Livestock">Livestock</option>
+                <option value="Pest Management">Pest Management</option>
+                <option value="Water Management">Water Management</option>
+                <option value="Business">Business</option>
+              </select>
+            </div>
+            <div class="col-sm-6">
+              <select class="form-select" id="levelFilter">
+                <option value="all" selected>All Levels</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Course Listings -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <ul class="nav nav-pills mb-4 justify-content-center" id="courseTabs">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#all-courses">All Courses</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#featured">Featured</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#popular">Most Popular</button>
+        </li>
+      </ul>
+      
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="all-courses">
+          <div class="row g-4" id="coursesList">
+            <!-- Course cards will be dynamically inserted here -->
+          </div>
+          <div id="noResults" class="text-center py-5 d-none">
+            <i class="bi bi-book text-muted" style="font-size: 3rem;"></i>
+            <h3 class="h4 text-secondary mt-3 mb-2">No courses found</h3>
+            <p class="text-muted mb-4">Try adjusting your search or filter criteria</p>
+            <button class="btn btn-outline-secondary" id="resetFilters">Reset Filters</button>
+          </div>
+        </div>
+        
+        <div class="tab-pane fade" id="featured">
+          <div class="row g-4" id="featuredCourses">
+            <!-- Featured course cards will be dynamically inserted here -->
+          </div>
+        </div>
+        
+        <div class="tab-pane fade" id="popular">
+          <div class="row g-4" id="popularCourses">
+            <!-- Popular course cards will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="mb-4">
+            <a class="d-flex align-items-center text-white text-decoration-none mb-3" href="index.html">
+              <i class="bi bi-tree me-2 fs-4"></i>
+              <span class="fw-bold">AgriWisdom</span>
+            </a>
+            <p class="text-muted">Empowering farmers with knowledge, community, and expert guidance to cultivate success.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="courses.html" class="text-muted text-decoration-none">Courses</a></li>
+            <li class="mb-2"><a href="experts.html" class="text-muted text-decoration-none">Experts</a></li>
+            <li class="mb-2"><a href="resources.html" class="text-muted text-decoration-none">Resources</a></li>
+            <li class="mb-2"><a href="login.html" class="text-muted text-decoration-none">Login</a></li>
+            <li class="mb-2"><a href="register.html" class="text-muted text-decoration-none">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2 d-flex">
+              <i class="bi bi-envelope me-2 mt-1"></i>
+              <span class="text-muted">info@agriwisdom.com</span>
+            </li>
+            <li class="mb-2 d-flex">
+              <i class="bi bi-telephone me-2 mt-1"></i>
+              <span class="text-muted">+1 (555) 123-4567</span>
+            </li>
+            <li class="mb-2 d-flex">
+              <i class="bi bi-geo-alt me-2 mt-1"></i>
+              <span class="text-muted">123 Farm Lane, Harvest City, HC 56789</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Newsletter</h5>
+          <p class="text-muted mb-4">Subscribe to receive farming tips and updates.</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your email">
+              <button class="btn btn-success" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary pt-4 mt-4 text-center text-muted">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> AgriWisdom. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Course data
+    const courses = [
+      {
+        id: 1,
+        title: "Sustainable Farming Practices",
+        instructor: "Dr. Emma Thompson",
+        level: "Beginner",
+        category: "Organic Farming",
+        duration: "6 weeks",
+        students: 1245,
+        rating: 4.8,
+        image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef",
+        featured: true,
+        popular: true,
+      },
+      {
+        id: 2,
+        title: "Advanced Crop Rotation",
+        instructor: "Prof. James Wilson",
+        level: "Intermediate",
+        category: "Crop Management",
+        duration: "8 weeks",
+        students: 958,
+        rating: 4.6,
+        image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399",
+        featured: true,
+        popular: true,
+      },
+      {
+        id: 3,
+        title: "Livestock Health Management",
+        instructor: "Dr. Sarah Johnson",
+        level: "Intermediate",
+        category: "Livestock",
+        duration: "10 weeks",
+        students: 782,
+        rating: 4.9,
+        image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30",
+        featured: true,
+        popular: false,
+      },
+      {
+        id: 4,
+        title: "Organic Pest Control Methods",
+        instructor: "Dr. Michael Brown",
+        level: "Beginner",
+        category: "Pest Management",
+        duration: "4 weeks",
+        students: 1354,
+        rating: 4.7,
+        image: "https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0",
+        featured: false,
+        popular: true,
+      },
+      {
+        id: 5,
+        title: "Water Conservation Techniques",
+        instructor: "Prof. Lisa Chen",
+        level: "Intermediate",
+        category: "Water Management",
+        duration: "6 weeks",
+        students: 678,
+        rating: 4.5,
+        image: "https://images.unsplash.com/photo-1618944847828-82e943c3bdb7",
+        featured: false,
+        popular: false,
+      },
+      {
+        id: 6,
+        title: "Farm Business Management",
+        instructor: "Sarah Thompson",
+        level: "Advanced",
+        category: "Business",
+        duration: "8 weeks",
+        students: 542,
+        rating: 4.8,
+        image: "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2",
+        featured: false,
+        popular: true,
+      },
+    ];
+
+    // Create a course card
+    function createCourseCard(course) {
+      const stars = Array(5).fill(0).map((_, i) => 
+        i < Math.floor(course.rating) ? 
+          '<i class="bi bi-star-fill"></i>' : 
+          (i < course.rating ? '<i class="bi bi-star-half"></i>' : '<i class="bi bi-star"></i>')
+      ).join('');
+      
+      return `
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="position-relative">
+              <img src="${course.image}" class="card-img-top" alt="${course.title}" style="height: 200px; object-fit: cover;">
+              ${course.featured ? '<div class="position-absolute top-0 start-0 bg-success text-white m-2 px-2 py-1 rounded-1 small">Featured</div>' : ''}
+            </div>
+            <div class="card-body">
+              <div class="d-flex mb-3">
+                <span class="badge bg-light text-success me-2">${course.category}</span>
+                <span class="badge bg-light text-secondary">${course.level}</span>
+              </div>
+              
+              <h5 class="card-title text-success mb-2">${course.title}</h5>
+              <p class="text-muted small mb-4">Instructor: ${course.instructor}</p>
+              
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-clock-history text-muted me-1"></i>
+                  <span class="text-muted small">${course.duration}</span>
+                </div>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-people text-muted me-1"></i>
+                  <span class="text-muted small">${course.students} students</span>
+                </div>
+                <div class="d-flex align-items-center text-warning">
+                  ${stars}
+                  <span class="text-muted ms-1 small">${course.rating}</span>
+                </div>
+              </div>
+              
+              <a href="course-detail.html?id=${course.id}" class="btn btn-success w-100">View Course</a>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Filter courses
+    function filterCourses() {
+      const searchQuery = document.getElementById('courseSearch').value.toLowerCase();
+      const categoryFilter = document.getElementById('categoryFilter').value;
+      const levelFilter = document.getElementById('levelFilter').value;
+      
+      const filteredCourses = courses.filter(course => {
+        // Search filter
+        const matchesSearch = 
+          course.title.toLowerCase().includes(searchQuery) ||
+          course.instructor.toLowerCase().includes(searchQuery) ||
+          course.category.toLowerCase().includes(searchQuery);
+        
+        // Category filter
+        const matchesCategory = categoryFilter === 'all' || course.category === categoryFilter;
+        
+        // Level filter
+        const matchesLevel = levelFilter === 'all' || course.level === levelFilter;
+        
+        return matchesSearch && matchesCategory && matchesLevel;
+      });
+      
+      // Update courses list
+      const coursesList = document.getElementById('coursesList');
+      const noResults = document.getElementById('noResults');
+      
+      if (filteredCourses.length === 0) {
+        coursesList.innerHTML = '';
+        noResults.classList.remove('d-none');
+      } else {
+        coursesList.innerHTML = filteredCourses.map(createCourseCard).join('');
+        noResults.classList.add('d-none');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initial load of all courses
+      const allCoursesList = document.getElementById('coursesList');
+      allCoursesList.innerHTML = courses.map(createCourseCard).join('');
+      
+      // Load featured courses
+      const featuredCourses = document.getElementById('featuredCourses');
+      const featuredCourseList = courses.filter(course => course.featured);
+      featuredCourses.innerHTML = featuredCourseList.map(createCourseCard).join('');
+      
+      // Load popular courses
+      const popularCourses = document.getElementById('popularCourses');
+      const popularCourseList = courses.filter(course => course.popular);
+      popularCourses.innerHTML = popularCourseList.map(createCourseCard).join('');
+      
+      // Add event listeners
+      document.getElementById('courseSearch').addEventListener('input', filterCourses);
+      document.getElementById('categoryFilter').addEventListener('change', filterCourses);
+      document.getElementById('levelFilter').addEventListener('change', filterCourses);
+      document.getElementById('resetFilters').addEventListener('click', function() {
+        document.getElementById('courseSearch').value = '';
+        document.getElementById('categoryFilter').value = 'all';
+        document.getElementById('levelFilter').value = 'all';
+        filterCourses();
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - AgriWisdom</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+  <div class="d-flex align-items-center justify-content-center min-vh-100 py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div class="text-center mb-4">
+            <a href="index.html">
+              <i class="bi bi-tree text-success fs-1 mb-2"></i>
+              <h1 class="h3 text-success">AgriWisdom</h1>
+            </a>
+          </div>
+          
+          <div class="card border-0 shadow-sm">
+            <div class="card-body p-4 p-md-5">
+              <h2 class="text-center h4 mb-1">Create an Account</h2>
+              <p class="text-center text-muted mb-4">Join our community of farmers and agricultural experts</p>
+              
+              <form id="registerForm">
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="John Doe" required>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <div class="input-group">
+                    <input type="password" class="form-control" id="password" placeholder="••••••••" required>
+                    <button class="btn btn-outline-secondary toggle-password" type="button">
+                      <i class="bi bi-eye"></i>
+                    </button>
+                  </div>
+                  <div class="form-text">Password must be at least 8 characters</div>
+                </div>
+                
+                <div class="mb-4">
+                  <label for="farmType" class="form-label">Farm Type</label>
+                  <select class="form-select" id="farmType" required>
+                    <option value="" selected disabled>Select farm type</option>
+                    <option value="crop">Crop Farming</option>
+                    <option value="livestock">Livestock</option>
+                    <option value="mixed">Mixed Farming</option>
+                    <option value="organic">Organic Farming</option>
+                    <option value="plantation">Plantation</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                
+                <button type="submit" class="btn btn-success w-100 mb-3" id="registerBtn">
+                  <span>Create Account</span>
+                  <span class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true" id="registerSpinner"></span>
+                </button>
+              </form>
+              
+              <div class="text-center mt-4">
+                <p class="text-muted">
+                  Already have an account? 
+                  <a href="login.html" class="text-success fw-semibold text-decoration-none">Sign in</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Toast notification -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+    <div id="toast" class="toast align-items-center text-white bg-success" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body" id="toastMessage">
+          Registration successful!
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Toggle password visibility
+      document.querySelector('.toggle-password').addEventListener('click', function() {
+        const passwordInput = document.getElementById('password');
+        const icon = this.querySelector('i');
+        
+        if (passwordInput.type === 'password') {
+          passwordInput.type = 'text';
+          icon.classList.replace('bi-eye', 'bi-eye-slash');
+        } else {
+          passwordInput.type = 'password';
+          icon.classList.replace('bi-eye-slash', 'bi-eye');
+        }
+      });
+      
+      // Handle registration
+      document.getElementById('registerForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const fullName = document.getElementById('fullName').value;
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const farmType = document.getElementById('farmType').value;
+        const registerBtn = document.getElementById('registerBtn');
+        const spinner = document.getElementById('registerSpinner');
+        
+        // Validate password length
+        if (password.length < 8) {
+          alert('Password must be at least 8 characters long');
+          return;
+        }
+        
+        // Show loading state
+        registerBtn.disabled = true;
+        spinner.classList.remove('d-none');
+        
+        // Simulate API call (2 second delay)
+        setTimeout(function() {
+          // Show success toast
+          const toast = new bootstrap.Toast(document.getElementById('toast'));
+          document.getElementById('toastMessage').textContent = 'Registration successful!';
+          toast.show();
+          
+          // Reset button state
+          registerBtn.disabled = false;
+          spinner.classList.add('d-none');
+          
+          // In real app, this would store auth token and user info
+          setTimeout(() => {
+            window.location.href = 'dashboard.html';
+          }, 1000);
+        }, 2000);
+      });
+    });
+  </script>
+</body>
+</html>

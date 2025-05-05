@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experts - AgriWisdom</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="bi bi-tree text-success me-2 fs-4"></i>
+        <span class="fw-bold text-success">AgriWisdom</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="experts.html">Experts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="btn btn-outline-success" href="login.html">Login</a>
+          </li>
+          <li class="nav-item ms-2">
+            <a class="btn btn-success" href="register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="bg-success py-4 py-md-5">
+    <div class="container text-center text-white">
+      <h1 class="display-5 fw-bold mb-3">Meet Our Agricultural Experts</h1>
+      <p class="lead mb-0 mx-auto" style="max-width: 700px;">
+        Learn from industry-leading professionals with years of experience in various agricultural specialties.
+      </p>
+    </div>
+  </section>
+  
+  <!-- Expert Listing -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <ul class="nav nav-pills mb-4 justify-content-center" id="expertTabs">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#all-experts">All Experts</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="pill" data-bs-target="#featured-experts">Featured Experts</button>
+        </li>
+      </ul>
+      
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="all-experts">
+          <div class="row g-4" id="expertsList">
+            <!-- Expert cards will be dynamically inserted here -->
+          </div>
+        </div>
+        
+        <div class="tab-pane fade" id="featured-experts">
+          <div class="row g-4" id="featuredExperts">
+            <!-- Featured expert cards will be dynamically inserted here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Become an Expert -->
+  <section class="py-5 bg-white">
+    <div class="container py-3">
+      <div class="text-center max-w-3xl mx-auto">
+        <i class="bi bi-award text-success" style="font-size: 4rem;"></i>
+        <h2 class="h3 text-success mt-4 mb-3">Are You an Agricultural Expert?</h2>
+        <p class="text-muted mb-4 mx-auto" style="max-width: 700px;">
+          Share your knowledge and experience with our community of farmers. Join our platform as an expert and help transform agricultural practices around the world.
+        </p>
+        <a href="expert-application.html" class="btn btn-success btn-lg">
+          Apply to Become an Expert
+          <i class="bi bi-box-arrow-up-right ms-2"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="mb-4">
+            <a class="d-flex align-items-center text-white text-decoration-none mb-3" href="index.html">
+              <i class="bi bi-tree me-2 fs-4"></i>
+              <span class="fw-bold">AgriWisdom</span>
+            </a>
+            <p class="text-muted">Empowering farmers with knowledge, community, and expert guidance to cultivate success.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="courses.html" class="text-muted text-decoration-none">Courses</a></li>
+            <li class="mb-2"><a href="experts.html" class="text-muted text-decoration-none">Experts</a></li>
+            <li class="mb-2"><a href="resources.html" class="text-muted text-decoration-none">Resources</a></li>
+            <li class="mb-2"><a href="login.html" class="text-muted text-decoration-none">Login</a></li>
+            <li class="mb-2"><a href="register.html" class="text-muted text-decoration-none">Register</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Contact Us</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2 d-flex">
+              <i class="bi bi-envelope me-2 mt-1"></i>
+              <span class="text-muted">info@agriwisdom.com</span>
+            </li>
+            <li class="mb-2 d-flex">
+              <i class="bi bi-telephone me-2 mt-1"></i>
+              <span class="text-muted">+1 (555) 123-4567</span>
+            </li>
+            <li class="mb-2 d-flex">
+              <i class="bi bi-geo-alt me-2 mt-1"></i>
+              <span class="text-muted">123 Farm Lane, Harvest City, HC 56789</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h5 class="mb-4">Newsletter</h5>
+          <p class="text-muted mb-4">Subscribe to receive farming tips and updates.</p>
+          <form>
+            <div class="input-group mb-3">
+              <input type="email" class="form-control" placeholder="Your email">
+              <button class="btn btn-success" type="submit">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-top border-secondary pt-4 mt-4 text-center text-muted">
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> AgriWisdom. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Experts data
+    const experts = [
+      {
+        id: 1,
+        name: "Dr. Emma Thompson",
+        title: "Agricultural Scientist",
+        specialization: "Organic Farming",
+        image: "https://images.unsplash.com/photo-1580489944761-15a19d654956",
+        bio: "Dr. Thompson has over 15 years of experience in developing sustainable farming practices. She holds a Ph.D. in Agricultural Sciences and has published numerous research papers on organic farming techniques.",
+        courses: 3,
+        students: 1245,
+        rating: 4.8,
+        featured: true,
+      },
+      {
+        id: 2,
+        name: "Prof. James Wilson",
+        title: "Soil Scientist",
+        specialization: "Crop Management",
+        image: "https://images.unsplash.com/photo-1566492031773-4f4e44671857",
+        bio: "Professor Wilson specializes in soil health and crop rotation strategies. With over 20 years in the field, he has helped thousands of farmers optimize their crop yields through scientifically-proven methods.",
+        courses: 4,
+        students: 958,
+        rating: 4.6,
+        featured: true,
+      },
+      {
+        id: 3,
+        name: "Dr. Sarah Johnson",
+        title: "Veterinarian",
+        specialization: "Livestock Health",
+        image: "https://images.unsplash.com/photo-1518577915332-c2a19f149a75",
+        bio: "Dr. Johnson is a renowned veterinarian specializing in livestock health and welfare. She has worked extensively with farmers to implement preventive healthcare practices for farm animals.",
+        courses: 2,
+        students: 782,
+        rating: 4.9,
+        featured: true,
+      },
+      {
+        id: 4,
+        name: "Dr. Michael Brown",
+        title: "Entomologist",
+        specialization: "Pest Management",
+        image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e",
+        bio: "As an entomologist with a focus on agricultural pests, Dr. Brown has developed innovative, eco-friendly pest control methods that have been adopted by farmers worldwide.",
+        courses: 2,
+        students: 1354,
+        rating: 4.7,
+        featured: false,
+      },
+      {
+        id: 5,
+        name: "Prof. Lisa Chen",
+        title: "Water Resource Engineer",
+        specialization: "Water Management",
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80",
+        bio: "Professor Chen specializes in water conservation and irrigation systems. Her research has led to water-saving techniques that have been implemented on farms across various climate zones.",
+        courses: 3,
+        students: 678,
+        rating: 4.5,
+        featured: false,
+      },
+      {
+        id: 6,
+        name: "Robert Anderson",
+        title: "Agricultural Economist",
+        specialization: "Farm Business",
+        image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e",
+        bio: "With a background in both farming and business management, Robert helps farmers develop sustainable business models and marketing strategies for their agricultural products.",
+        courses: 1,
+        students: 542,
+        rating: 4.8,
+        featured: false,
+      },
+    ];
+
+    // Create an expert card
+    function createExpertCard(expert) {
+      return `
+        <div class="col-12 mb-4">
+          <div class="card border-0 shadow-sm">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="${expert.image}" alt="${expert.name}" class="img-fluid h-100 w-100" style="object-fit: cover;">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-start mb-3">
+                    <div>
+                      <h3 class="h4 text-success mb-1">${expert.name}</h3>
+                      <p class="text-muted mb-1">${expert.title}</p>
+                    </div>
+                    <span class="badge bg-light text-success px-3 py-2 rounded-pill">${expert.specialization}</span>
+                  </div>
+                  
+                  <p class="mb-4">${expert.bio}</p>
+                  
+                  <div class="row text-center mb-4">
+                    <div class="col-4">
+                      <div class="h4 text-success mb-0">${expert.courses}</div>
+                      <div class="small text-muted">Courses</div>
+                    </div>
+                    <div class="col-4">
+                      <div class="h4 text-success mb-0">${expert.students}</div>
+                      <div class="small text-muted">Students</div>
+                    </div>
+                    <div class="col-4">
+                      <div class="h4 text-success mb-0">${expert.rating}</div>
+                      <div class="small text-muted">Rating</div>
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex flex-wrap gap-2">
+                    <a href="expert-courses.html?expert=${expert.id}" class="btn btn-outline-success">
+                      <i class="bi bi-book me-2"></i>
+                      View Courses
+                    </a>
+                    <a href="book-session.html?expert=${expert.id}" class="btn btn-outline-success">
+                      <i class="bi bi-calendar-event me-2"></i>
+                      Book Session
+                    </a>
+                    <a href="expert-chat.html?expert=${expert.id}" class="btn btn-success">
+                      <i class="bi bi-chat-dots me-2"></i>
+                      Chat With Expert
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load all experts
+      const expertsList = document.getElementById('expertsList');
+      expertsList.innerHTML = experts.map(createExpertCard).join('');
+      
+      // Load featured experts
+      const featuredExperts = document.getElementById('featuredExperts');
+      const featuredExpertsList = experts.filter(expert => expert.featured);
+      featuredExperts.innerHTML = featuredExpertsList.map(createExpertCard).join('');
+    });
+  </script>
+</body>
+</html>
