@@ -11,26 +11,26 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-4">
-              <Sprout className="h-8 w-8 mr-2" />
-              <span className="text-xl font-bold">AgriWisdom</span>
+              <Sprout className="h-8 w-8 mr-2 text-white" />
+              <span className="text-xl font-bold text-white">AgriWisdom</span>
             </div>
-            <p className="text-white/80 mb-6 leading-relaxed">
+            <p className="text-gray-200 mb-6 leading-relaxed">
               Empowering farmers with knowledge, community, and expert guidance to cultivate success through modern agricultural education.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-white/70 hover:text-white transition-colors">
+              <a href="#" className="text-gray-200 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors">
+              <a href="#" className="text-gray-200 hover:text-white transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors">
+              <a href="#" className="text-gray-200 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors">
+              <a href="#" className="text-gray-200 hover:text-white transition-colors">
                 <Youtube className="h-5 w-5" />
               </a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors">
+              <a href="#" className="text-gray-200 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
             </div>
@@ -38,56 +38,56 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-3">
-              <li><Link to="/" className="text-white/80 hover:text-white transition-colors">Home</Link></li>
-              <li><Link to="/courses" className="text-white/80 hover:text-white transition-colors">Courses</Link></li>
-              <li><Link to="/experts" className="text-white/80 hover:text-white transition-colors">Experts</Link></li>
-              <li><Link to="/resources" className="text-white/80 hover:text-white transition-colors">Resources</Link></li>
-              <li><Link to="/dashboard" className="text-white/80 hover:text-white transition-colors">Dashboard</Link></li>
-              <li><Link to="/login" className="text-white/80 hover:text-white transition-colors">Login</Link></li>
-              <li><Link to="/register" className="text-white/80 hover:text-white transition-colors">Register</Link></li>
+              <li><Link to="/" className="text-gray-200 hover:text-white transition-colors">Home</Link></li>
+              <li><Link to="/courses" className="text-gray-200 hover:text-white transition-colors">Courses</Link></li>
+              <li><Link to="/experts" className="text-gray-200 hover:text-white transition-colors">Experts</Link></li>
+              <li><Link to="/resources" className="text-gray-200 hover:text-white transition-colors">Resources</Link></li>
+              <li><Link to="/dashboard" className="text-gray-200 hover:text-white transition-colors">Dashboard</Link></li>
+              <li><Link to="/login" className="text-gray-200 hover:text-white transition-colors">Login</Link></li>
+              <li><Link to="/register" className="text-gray-200 hover:text-white transition-colors">Register</Link></li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Services</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Services</h3>
             <ul className="space-y-3">
-              <li><Link to="/courses" className="text-white/80 hover:text-white transition-colors">Online Courses</Link></li>
-              <li><Link to="/experts" className="text-white/80 hover:text-white transition-colors">Expert Consultation</Link></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Community Forum</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Certification Programs</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Mobile App</a></li>
-              <li><Link to="/resources" className="text-white/80 hover:text-white transition-colors">Research Papers</Link></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Weather Updates</a></li>
+              <li><Link to="/courses" className="text-gray-200 hover:text-white transition-colors">Online Courses</Link></li>
+              <li><Link to="/experts" className="text-gray-200 hover:text-white transition-colors">Expert Consultation</Link></li>
+              <li><a href="#" className="text-gray-200 hover:text-white transition-colors">Community Forum</a></li>
+              <li><a href="#" className="text-gray-200 hover:text-white transition-colors">Certification Programs</a></li>
+              <li><a href="#" className="text-gray-200 hover:text-white transition-colors">Mobile App</a></li>
+              <li><Link to="/resources" className="text-gray-200 hover:text-white transition-colors">Research Papers</Link></li>
+              <li><a href="#" className="text-gray-200 hover:text-white transition-colors">Weather Updates</a></li>
             </ul>
           </div>
 
           {/* Support & Contact */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Support</h3>
+            <h3 className="text-lg font-semibold mb-4 text-white">Support</h3>
             <ul className="space-y-3 mb-6">
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Help Center</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Contact Support</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">FAQ</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Terms of Service</a></li>
+              <li><a href="#" className="text-gray-200 hover:text-white transition-colors">Help Center</a></li>
+              <li><a href="#" className="text-gray-200 hover:text-white transition-colors">Contact Support</a></li>
+              <li><a href="#" className="text-gray-200 hover:text-white transition-colors">FAQ</a></li>
+              <li><a href="#" className="text-gray-200 hover:text-white transition-colors">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-200 hover:text-white transition-colors">Terms of Service</a></li>
             </ul>
 
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-start">
                 <Mail className="h-4 w-4 mr-2 mt-1 text-farm-accent" />
-                <span className="text-white/80 text-sm">info@agriwisdom.com</span>
+                <span className="text-gray-200 text-sm">info@agriwisdom.com</span>
               </div>
               <div className="flex items-start">
                 <Phone className="h-4 w-4 mr-2 mt-1 text-farm-accent" />
-                <span className="text-white/80 text-sm">+91 98765 43210</span>
+                <span className="text-gray-200 text-sm">+91 98765 43210</span>
               </div>
               <div className="flex items-start">
                 <MapPin className="h-4 w-4 mr-2 mt-1 text-farm-accent" />
-                <span className="text-white/80 text-sm">New Delhi, India</span>
+                <span className="text-gray-200 text-sm">New Delhi, India</span>
               </div>
             </div>
           </div>
@@ -96,8 +96,8 @@ const Footer = () => {
         {/* Newsletter Section */}
         <div className="bg-white/10 rounded-lg p-6 mb-8">
           <div className="max-w-md mx-auto text-center">
-            <h4 className="text-lg font-semibold mb-2">Stay Updated</h4>
-            <p className="text-white/80 text-sm mb-4">
+            <h4 className="text-lg font-semibold mb-2 text-white">Stay Updated</h4>
+            <p className="text-gray-200 text-sm mb-4">
               Subscribe to receive farming tips, course updates, and agricultural news.
             </p>
             <form className="flex gap-2">
@@ -120,14 +120,14 @@ const Footer = () => {
         {/* Bottom Footer */}
         <div className="border-t border-white/20 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/70 text-sm text-center md:text-left">
+            <p className="text-gray-200 text-sm text-center md:text-left">
               &copy; {new Date().getFullYear()} AgriWisdom. All rights reserved.
             </p>
             <div className="flex flex-wrap justify-center md:justify-end gap-6">
-              <a href="#" className="text-white/70 hover:text-white transition-colors text-sm">Privacy</a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors text-sm">Terms</a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors text-sm">Cookies</a>
-              <a href="#" className="text-white/70 hover:text-white transition-colors text-sm">Sitemap</a>
+              <a href="#" className="text-gray-200 hover:text-white transition-colors text-sm">Privacy</a>
+              <a href="#" className="text-gray-200 hover:text-white transition-colors text-sm">Terms</a>
+              <a href="#" className="text-gray-200 hover:text-white transition-colors text-sm">Cookies</a>
+              <a href="#" className="text-gray-200 hover:text-white transition-colors text-sm">Sitemap</a>
             </div>
           </div>
         </div>
